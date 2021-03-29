@@ -1,1 +1,1 @@
-TinDog Starting Files
+"Tindog" is a dating website to find the perfect dates for your doggos!!. "Why?", you ask?, I say why not, afterall dogs love better than humans & their love is the purest so there has to be dating site for them.
