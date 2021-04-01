@@ -7,16 +7,20 @@ body{
 }
 
 /* Scrollbar */
+body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+body::-webkit-scrollbar-track {
+box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.9);
+}
 
-::-webkit-scrollbar{
-    background-color: #ef8172;
+body::-webkit-scrollbar-thumb {
+background-color: grey;
 }
-::-webkit-scrollbar-thumb{
-    background: #ff4c68;
-    border-radius: 2cm;
-}
-::-webkit-scrollbar-button{
-    background: #ff4c68;
+
+::-webkit-scrollbar-thumb:hover{
+    background:rgb(19, 18, 18);
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -63,7 +67,6 @@ h1, h2, h3, h4, h5, h6{
     font-family: "Montserrat-Black";
     font-size: 1.2rem;
     font-weight: bold;
-    display: block;
 }
 
 .navbar-nav{
@@ -74,8 +77,14 @@ h1, h2, h3, h4, h5, h6{
 /* Headings */
 
 .big-heading{
-    font-size: 3rem;
+    font-family: "Montserrat-Black";
+    font-size: 3.5rem;
     color: white;
+    line-height: 1.5;
+}
+
+.section-heading{
+    font-size: 3rem;
     line-height: 1.5;
 }
 
@@ -87,7 +96,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #title .container-fluid{
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
+    
 }
 
 .download-button{
@@ -99,11 +109,10 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .title-image{
-    padding: 15px 15px 0;
     width: 60%;
     transform: rotate(25deg);
-    position: relative;
-    top: 20%;
+    position: absolute;
+    right: 30%;
 }
 
 @media (max-width:980px){
@@ -155,6 +164,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .testimonial-text{
+    font-size: 3rem;
+    line-height: 1.5;
     margin: 15px;
 }
 
@@ -180,13 +191,19 @@ h1, h2, h3, h4, h5, h6{
     margin: 10px;
 }
 
+.price-text{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
 #pricing{
+    padding: 100px;
     font-family: "Montserrat";
     font-weight: bold;
 
 }
 
-.pricing-columns{
+.pricing-column{
     padding: 8% 2%;
 }
 
@@ -201,6 +218,14 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /* Bottom container */
+
+#cta .container-fluid{
+    padding: 7% 17% ;
+}
+
+#footer{
+    color: grey;
+}
 
 .footer-download-buttons{
     margin: 10px 10px;
