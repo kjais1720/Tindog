@@ -2,6 +2,15 @@
 body{
     font-family: "Montserrat-Light-300";
     transition: ease-in ;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Montserrat-Bold";
+}
+
+.container-fluid{
+    padding:7% 15%;
 }
 
 /* Navigation */
@@ -24,6 +33,7 @@ body{
     font-family: "Montserrat-Black";
     font-size: 1.2rem;
     font-weight: bold;
+    display: block;
 }
 
 .navbar-nav{
@@ -31,10 +41,9 @@ body{
     right: 1%;
 }
 
-/* Heading */
+/* Headings */
 
-h1{
-    font-family: "Montserrat-Black";
+.big-heading{
     font-size: 3rem;
     color: white;
     line-height: 1.5;
@@ -52,12 +61,8 @@ h1{
     background-color: #ff4c68;
 }
 
-.title-container{
-    padding-bottom: 0;
-}
-
-.container-fluid{
-    padding:1% 15%;
+#title .container-fluid{
+    padding: 3% 15%;
 }
 
 .download-button{
@@ -69,13 +74,11 @@ h1{
 }
 
 .title-image{
-    padding: 15px;
+    padding: 15px 15px 0;
     width: 60%;
     transform: rotate(25deg);
     position: relative;
-    left: 15%;
     top: 20%;
-    right: 30%;
 }
 
 @media (max-width:980px){
@@ -102,30 +105,21 @@ h1{
 
 #features{
     position: relative;
+    z-index: 2;
     background-color: white;
-    margin: 0 auto 8%;
+
 }
 
 #features p{
     font-weight: 500;
-    padding: 5%;
+
     color: grey;
-}
-
-#features .row{
-    text-align: center;
-}
-
-h3{
-    font-weight:bold ;
-    font-family: "Montserrat-Bold";
 }
 
 /* Testimonial Section */
 
 #testimonials{
     background-color:#ff4c68;
-    text-align: center;
 }
 
 .testimonial-image{
@@ -143,8 +137,11 @@ h3{
 
 #press{
     background-color: #ff4c68 ;
-    padding-bottom: 5%;
-    text-align: center;
+
+}
+
+#press .container-fluid{
+    padding: 4% 0;
 }
 
 .press-logo{
@@ -155,16 +152,14 @@ h3{
 
 /* Pricing */
 
+.card{
+    background-image:linear-gradient(#ff4c68,#fff);
+}
+
 #pricing{
     font-family: "Montserrat";
     font-weight: bold;
-    padding: 7% 15%;
-    text-align: center;
-}
 
-#pricing h2{
-    font-family: "Montserrat-Black";
-    font-weight: bold;
 }
 
 .pricing-columns{
@@ -178,21 +173,20 @@ h3{
 }
 
 .sign-up:hover{
-    color: white;
     background-color:#fd2848;
 }
 
 /* Bottom container */
 
 #cta{
-    text-align: center;
     background-color: #ff4c68;
-    padding: 5% 15%;
+
 }
 
 #cta h3{
     font-family: "Ubuntu";
-    font-size: xx-large;
+    font-size: 3.5rem;
+    line-height: 1.5;
     color: white;
     padding: 2%;
 
@@ -203,10 +197,7 @@ h3{
 }
 
 #footer{
-    padding: 300px auto;
-    text-align: center;
-    display: block;
-    margin: 50px auto;
+    padding: 3% 15%;
 }
 
 .social-icon{
