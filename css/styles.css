@@ -202,4 +202,32 @@ p {
 
 .social-icon:hover{
   color: #ef8172;
+  transform: scale(1.5);
 }
+
+.personal-website{
+  margin-top: 0;
+  color: #ff4c68;
+  font-weight: bold;
+  border-radius: 5px ;
+  text-decoration-style: none;
+  transition: all ease 0.3s;
+}
+
+footer:hover .personal-website{
+  transition: all ease 0.3s;
+  color: white;
+  text-decoration: none;
+  background-color: #ff4c68;
+  padding: 7px;
+  box-shadow: 5px 5px 5px black;
+  transform: rotate(90deg);
+  -webkit-transform: skew(10deg, 10deg);
+          transform: rotate(60deg) skew(10deg, 10deg);
+}
+
+.website{
+  position: absolute;
+  
+}
+
